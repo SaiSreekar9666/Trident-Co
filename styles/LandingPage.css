@@ -1,0 +1,193 @@
+ /*Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #111;
+  color: #fff;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+/* Full-Screen Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/screen-code-coding-programming.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:white;
+  
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #e05a4f;
+  transform: scale(1.1);
+}
+/* Navigation */
+header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 10;
+  padding: 15px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+header nav a {
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: #ff6f61;
+}
+/* Section Styles */
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  width: 30%;
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+.service-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.service-card p {
+  color: #ccc;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #222;
+  padding: 80px 0;
+  display: flex;
+  
+  
+}
+#testimonials-head{
+  border-radius:15px;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: #ff6f61;
+  padding: 20px;
+  margin:15px;
+  font-size: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  width: 45%;
+  padding: 30px;
+  margin: 20px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  
+}
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+.testimonial-card p {
+  font-style: italic;
+}
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+.contact-form button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #e05a4f;
+}
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
