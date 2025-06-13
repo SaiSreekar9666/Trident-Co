@@ -1,58 +1,69 @@
- /*Global Styles */
+/* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #111;
+  background: #111;
   color: #fff;
 }
+
 h1, h2, h3 {
-  margin: 0;
-  color: black;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 /* Glassmorphism Effect */
 .glass {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255 255 255 / 0.1);
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.5);
 }
-/* Full-Screen Hero Section */
+
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('../images/screen-code-coding-programming.jpg'); /* Replace with your own image */
+  background-image: url('../images/trident-1-logo.png'); 
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color:white;
-  
+  color: #fff;
 }
+
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 4px 4px 10px rgb(0 0 0 / 0.7);
+  margin-bottom: 30px;
+  margin-left: 20rem;
 }
+
 .cta-btn {
-  padding: 15px 30px;
-  background-color: #ff6f61;
+  padding: 15px 40px;
+  margin-top: 12rem;
+  background: #ff6f61;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 18px;
+  font-weight: 500;
   border-radius: 25px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .cta-btn:hover {
-  background-color: #e05a4f;
-  transform: scale(1.1);
+  background: #e05a4f;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.5);
 }
+
 /* Navigation */
 header {
   position: absolute;
@@ -61,22 +72,25 @@ header {
   z-index: 10;
   padding: 15px 0;
 }
+
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
-  
 }
+
 header nav a {
-  color: white;
+  color: #fff;
   font-size: 18px;
   margin: 0 15px;
   transition: color 0.3s ease;
 }
+
 header nav a:hover {
   color: #ff6f61;
 }
+
 /* Section Styles */
 section {
   padding: 80px 0;
@@ -90,106 +104,364 @@ section {
   flex-wrap: wrap;
   margin: 0 10%;
 }
+
 .service-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255 255 255 / 0.1);
   backdrop-filter: blur(8px);
   border-radius: 15px;
   width: 30%;
   margin: 20px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 25px rgb(0 0 0 / 0.5);
 }
+
 .service-card h3 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
+
 .service-card p {
   color: #ccc;
 }
 
-/* Testimonials Section */
-.testimonials {
-  background-color: #222;
-  padding: 80px 0;
-  display: flex;
-  
-  
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #111;
+  font-family: Arial, sans-serif;
 }
-#testimonials-head{
-  border-radius:15px;
-  text-align: center;
-  font-weight: 100;
-  text-shadow: #ff6f61;
-  padding: 20px;
-  margin:15px;
-  font-size: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
 
+h2#testimonials-head {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #ff6f61;
+  font-size: 2.5rem;
+}
+
+.testimonials {
+  width: 90%;
+  margin: 0 auto 50px;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 20px;
+  background: #fff1;
+  box-shadow: 0 20px 50px rgb(0 0 0 / 0.7);
+  position: relative;
+}
+
+.testimonial-cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 .testimonial-card {
-  background: rgba(255, 255, 255, 0.1);
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 30px;
+  background:#111;
+  border: 5px solid #ff6f61;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  border: 5px solid #ff6f61;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px #ff6f6133;
+}
+
+.testimonial-card h3 {
+  color: #ff6f61;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.testimonial-card p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.slider-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-dots span {
+  font-size: 2rem;
+  color: #fff5;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.slider-dots span.active,
+.slider-dots span:hover {
+  color: #ff6f61;
+}
+
+
+/* Testimonials Section
+.testimonials {
+  background: #222;
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#testimonials-head {
+  border-radius:15px;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: #ff6f61 0 0 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.5);
+  transition: transform 0.3s ease;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#testimonials-head:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card {
+  background: rgb(255 255 255 / 0.1);
   backdrop-filter: blur(8px);
   border-radius: 15px;
   width: 45%;
   padding: 30px;
   margin: 20px;
   color: #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .testimonial-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgb(0 0 0 / 0.5);
 }
+
 .testimonial-card p {
   font-style: italic;
-}
+} */
+
 /* Contact Form */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255 255 255 / 0.1);
   border-radius: 15px;
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 25px rgb(0 0 0 / 0.5);
 }
-.contact-form input, .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 15px;
-  margin: 10px 0;
+  margin-bottom: 20px;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  border: none;
+  background: rgb(255 255 255 / 0.2);
+  color: #fff;
   font-size: 16px;
 }
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
 .contact-form button {
-  background-color: #ff6f61;
+  background: #ff6f61;
   border: none;
-  color: white;
+  color: #fff;
   padding: 15px 30px;
   font-size: 18px;
+  font-weight: 500;
   border-radius: 25px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.5);
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .contact-form button:hover {
-  background-color: #e05a4f;
+  background: #e05a4f;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.5);
 }
+
 /* Footer */
 footer {
-  background-color: #111;
+  background: #111;
   padding: 40px 0;
   color: #fff;
   text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .services,
+  .testimonials {
+    padding-bottom: 60px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .service-card,
+  .testimonial-card {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 0.5);
+  }
+
+  .contact-form {
+    padding: 20px;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contact-form button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* Large tablets and small desktops */
+@media (min-width: 767px) and (max-width: 992px) {
+
+  header .container {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    padding: 14px 30px;
+    font-size: 17px;
+  }
+
+  .services {
+    margin: 0 5%;
+  }
+
+  .service-card {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .testimonials {
+    padding: 60px 0;
+  }
+
+  .testimonial-card {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    padding: 30px;
+    max-width: 90%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .cta-btn {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+
+  .services {
+    margin: 0 10%;
+  }
+
+  .service-card {
+    width: 30%;
+  }
 }
